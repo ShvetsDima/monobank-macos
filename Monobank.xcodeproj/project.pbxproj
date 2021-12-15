@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2968B708276A71090083DBBD /* Currency in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B707276A71090083DBBD /* Currency */; };
+		2968B70A276A71100083DBBD /* Statement in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B709276A71100083DBBD /* Statement */; };
+		2968B70C276A71160083DBBD /* User in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B70B276A71160083DBBD /* User */; };
 		2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4C276A6299000AA538 /* MonobankApp.swift */; };
 		2991CA4F276A6299000AA538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4E276A6299000AA538 /* ContentView.swift */; };
 		2991CA51276A629A000AA538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA50276A6299000AA538 /* Assets.xcassets */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2968B702276A700E0083DBBD /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
+		2968B703276A70A10083DBBD /* Currency */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Currency; sourceTree = "<group>"; };
+		2968B704276A70C30083DBBD /* User */ = {isa = PBXFileReference; lastKnownFileType = folder; path = User; sourceTree = "<group>"; };
+		2968B705276A70E40083DBBD /* Statement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Statement; sourceTree = "<group>"; };
 		2991CA49276A6299000AA538 /* Monobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2991CA4C276A6299000AA538 /* MonobankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonobankApp.swift; sourceTree = "<group>"; };
 		2991CA4E276A6299000AA538 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2968B70A276A71100083DBBD /* Statement in Frameworks */,
+				2968B708276A71090083DBBD /* Currency in Frameworks */,
+				2968B70C276A71160083DBBD /* User in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2968B706276A71090083DBBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2991CA40276A6299000AA538 = {
 			isa = PBXGroup;
 			children = (
 				2991CA4B276A6299000AA538 /* Monobank */,
 				2991CA5D276A629A000AA538 /* MonobankTests */,
 				2991CA67276A629A000AA538 /* MonobankUITests */,
+				2968B705276A70E40083DBBD /* Statement */,
+				2968B704276A70C30083DBBD /* User */,
+				2968B703276A70A10083DBBD /* Currency */,
+				2968B702276A700E0083DBBD /* Core */,
 				2991CA4A276A6299000AA538 /* Products */,
+				2968B706276A71090083DBBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +167,11 @@
 			dependencies = (
 			);
 			name = Monobank;
+			packageProductDependencies = (
+				2968B707276A71090083DBBD /* Currency */,
+				2968B709276A71100083DBBD /* Statement */,
+				2968B70B276A71160083DBBD /* User */,
+			);
 			productName = Monobank;
 			productReference = 2991CA49276A6299000AA538 /* Monobank.app */;
 			productType = "com.apple.product-type.application";
@@ -426,6 +453,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,6 +481,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +631,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2968B707276A71090083DBBD /* Currency */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Currency;
+		};
+		2968B709276A71100083DBBD /* Statement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Statement;
+		};
+		2968B70B276A71160083DBBD /* User */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = User;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2991CA41276A6299000AA538 /* Project object */;
 }
