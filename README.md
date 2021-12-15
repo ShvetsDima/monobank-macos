@@ -1,0 +1,2 @@
+# monobank-macos
+Monobank macOS
