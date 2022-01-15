@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "Core",
+    name: "Resources",
     platforms: [
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "Core", targets: ["Core"])
+        .library(name: "Resources", targets: ["Resources"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "Core", dependencies: []),
-        .testTarget(name: "CoreTests", dependencies: ["Core"])
+        .target(name: "Resources", dependencies: []),
+        .testTarget(name: "ResourcesTests", dependencies: ["Resources"])
     ]
 )

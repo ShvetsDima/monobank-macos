@@ -11,7 +11,7 @@ import SwiftUI
 struct MonobankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Text("Debug")
         }
     }
 }

@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2968B708276A71090083DBBD /* Currency in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B707276A71090083DBBD /* Currency */; };
-		2968B70A276A71100083DBBD /* Statement in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B709276A71100083DBBD /* Statement */; };
-		2968B70C276A71160083DBBD /* User in Frameworks */ = {isa = PBXBuildFile; productRef = 2968B70B276A71160083DBBD /* User */; };
+		292EEE13279373F5008521C4 /* Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 292EEE12279373F5008521C4 /* Umbrella */; };
+		292EEE1927937D7A008521C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EEE1827937D7A008521C4 /* Config.swift */; };
 		2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4C276A6299000AA538 /* MonobankApp.swift */; };
-		2991CA4F276A6299000AA538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4E276A6299000AA538 /* ContentView.swift */; };
 		2991CA51276A629A000AA538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA50276A6299000AA538 /* Assets.xcassets */; };
 		2991CA54276A629A000AA538 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA53276A629A000AA538 /* Preview Assets.xcassets */; };
 		2991CA5F276A629A000AA538 /* MonobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA5E276A629A000AA538 /* MonobankTests.swift */; };
@@ -37,13 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		292EEE0F27937246008521C4 /* Authentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Authentication; sourceTree = "<group>"; };
+		292EEE1127937351008521C4 /* Umbrella */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Umbrella; sourceTree = "<group>"; };
+		292EEE1427937498008521C4 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
+		292EEE15279374DF008521C4 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Resources; sourceTree = "<group>"; };
+		292EEE1827937D7A008521C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		292EEE1C27937EB6008521C4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adhoc.xcconfig; sourceTree = "<group>"; };
+		292EEE1E27937EE3008521C4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		292EEE26279382B9008521C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2968B702276A700E0083DBBD /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
-		2968B703276A70A10083DBBD /* Currency */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Currency; sourceTree = "<group>"; };
-		2968B704276A70C30083DBBD /* User */ = {isa = PBXFileReference; lastKnownFileType = folder; path = User; sourceTree = "<group>"; };
-		2968B705276A70E40083DBBD /* Statement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Statement; sourceTree = "<group>"; };
 		2991CA49276A6299000AA538 /* Monobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2991CA4C276A6299000AA538 /* MonobankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonobankApp.swift; sourceTree = "<group>"; };
-		2991CA4E276A6299000AA538 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2991CA50276A6299000AA538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2991CA53276A629A000AA538 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2991CA55276A629A000AA538 /* Monobank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Monobank.entitlements; sourceTree = "<group>"; };
@@ -59,9 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2968B70A276A71100083DBBD /* Statement in Frameworks */,
-				2968B708276A71090083DBBD /* Currency in Frameworks */,
-				2968B70C276A71160083DBBD /* User in Frameworks */,
+				292EEE13279373F5008521C4 /* Umbrella in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292EEE1727937D28008521C4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				292EEE1827937D7A008521C4 /* Config.swift */,
+				2991CA55276A629A000AA538 /* Monobank.entitlements */,
+				292EEE1C27937EB6008521C4 /* Debug.xcconfig */,
+				292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */,
+				292EEE1E27937EE3008521C4 /* Release.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		2968B706276A71090083DBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +108,10 @@
 				2991CA4B276A6299000AA538 /* Monobank */,
 				2991CA5D276A629A000AA538 /* MonobankTests */,
 				2991CA67276A629A000AA538 /* MonobankUITests */,
-				2968B705276A70E40083DBBD /* Statement */,
-				2968B704276A70C30083DBBD /* User */,
-				2968B703276A70A10083DBBD /* Currency */,
+				292EEE1127937351008521C4 /* Umbrella */,
+				292EEE0F27937246008521C4 /* Authentication */,
+				292EEE1427937498008521C4 /* UIComponents */,
+				292EEE15279374DF008521C4 /* Resources */,
 				2968B702276A700E0083DBBD /* Core */,
 				2991CA4A276A6299000AA538 /* Products */,
 				2968B706276A71090083DBBD /* Frameworks */,
@@ -117,10 +131,10 @@
 		2991CA4B276A6299000AA538 /* Monobank */ = {
 			isa = PBXGroup;
 			children = (
+				292EEE26279382B9008521C4 /* Info.plist */,
 				2991CA4C276A6299000AA538 /* MonobankApp.swift */,
-				2991CA4E276A6299000AA538 /* ContentView.swift */,
+				292EEE1727937D28008521C4 /* Configuration */,
 				2991CA50276A6299000AA538 /* Assets.xcassets */,
-				2991CA55276A629A000AA538 /* Monobank.entitlements */,
 				2991CA52276A629A000AA538 /* Preview Content */,
 			);
 			path = Monobank;
@@ -168,9 +182,7 @@
 			);
 			name = Monobank;
 			packageProductDependencies = (
-				2968B707276A71090083DBBD /* Currency */,
-				2968B709276A71100083DBBD /* Statement */,
-				2968B70B276A71160083DBBD /* User */,
+				292EEE12279373F5008521C4 /* Umbrella */,
 			);
 			productName = Monobank;
 			productReference = 2991CA49276A6299000AA538 /* Monobank.app */;
@@ -286,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2991CA4F276A6299000AA538 /* ContentView.swift in Sources */,
+				292EEE1927937D7A008521C4 /* Config.swift in Sources */,
 				2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,8 +336,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2991CA6C276A629A000AA538 /* Debug */ = {
+		292EEE2227938203008521C4 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -375,7 +388,152 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Adhoc;
+		};
+		292EEE2327938203008521C4 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Monobank/Preview Content\"";
+				DEVELOPMENT_TEAM = WP76D762Y9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Adhoc;
+		};
+		292EEE2427938203008521C4 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP76D762Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds.MonobankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monobank.app/Contents/MacOS/Monobank";
+			};
+			name = Adhoc;
+		};
+		292EEE2527938203008521C4 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP76D762Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds.MonobankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Monobank;
+			};
+			name = Adhoc;
+		};
+		2991CA6C276A629A000AA538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1C27937EB6008521C4 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -387,6 +545,7 @@
 		};
 		2991CA6D276A629A000AA538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1E27937EE3008521C4 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -430,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -441,10 +600,12 @@
 		};
 		2991CA6F276A629A000AA538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1C27937EB6008521C4 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Monobank/Monobank.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -453,12 +614,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,10 +633,12 @@
 		};
 		2991CA70276A629A000AA538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1E27937EE3008521C4 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Monobank/Monobank.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -481,12 +647,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,6 +666,7 @@
 		};
 		2991CA72276A629A000AA538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1C27937EB6008521C4 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +692,7 @@
 		};
 		2991CA73276A629A000AA538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1E27937EE3008521C4 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +718,7 @@
 		};
 		2991CA75276A629A000AA538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1C27937EB6008521C4 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +742,7 @@
 		};
 		2991CA76276A629A000AA538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EEE1E27937EE3008521C4 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,52 +771,48 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2991CA6C276A629A000AA538 /* Debug */,
+				292EEE2227938203008521C4 /* Adhoc */,
 				2991CA6D276A629A000AA538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2991CA6E276A629A000AA538 /* Build configuration list for PBXNativeTarget "Monobank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2991CA6F276A629A000AA538 /* Debug */,
+				292EEE2327938203008521C4 /* Adhoc */,
 				2991CA70276A629A000AA538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2991CA71276A629A000AA538 /* Build configuration list for PBXNativeTarget "MonobankTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2991CA72276A629A000AA538 /* Debug */,
+				292EEE2427938203008521C4 /* Adhoc */,
 				2991CA73276A629A000AA538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2991CA74276A629A000AA538 /* Build configuration list for PBXNativeTarget "MonobankUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2991CA75276A629A000AA538 /* Debug */,
+				292EEE2527938203008521C4 /* Adhoc */,
 				2991CA76276A629A000AA538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2968B707276A71090083DBBD /* Currency */ = {
+		292EEE12279373F5008521C4 /* Umbrella */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Currency;
-		};
-		2968B709276A71100083DBBD /* Statement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Statement;
-		};
-		2968B70B276A71160083DBBD /* User */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = User;
+			productName = Umbrella;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
