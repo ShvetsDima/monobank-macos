@@ -12,10 +12,11 @@ let package = Package(
         .library(name: "Umbrella", targets: ["Umbrella"])
     ],
     dependencies: [
+        .package(path: "../Resources"),
         .package(path: "../Authentication")
     ],
     targets: [
-        .target(name: "Umbrella", dependencies: ["Authentication"]),
+        .target(name: "Umbrella", dependencies: ["Authentication", "Resources"]),
         .testTarget(name: "UmbrellaTests", dependencies: ["Umbrella"])
     ]
 )

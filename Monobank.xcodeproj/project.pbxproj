@@ -172,7 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2991CA6E276A629A000AA538 /* Build configuration list for PBXNativeTarget "Monobank" */;
 			buildPhases = (
-				29FE43922795F01E00DEEEE1 /* Generate Colors */,
+				29FE43922795F01E00DEEEE1 /* Generate Resources */,
 				2991CA45276A6299000AA538 /* Sources */,
 				2991CA46276A6299000AA538 /* Frameworks */,
 				2991CA47276A6299000AA538 /* Resources */,
@@ -295,7 +295,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29FE43922795F01E00DEEEE1 /* Generate Colors */ = {
+		29FE43922795F01E00DEEEE1 /* Generate Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +304,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Generate Colors";
+			name = "Generate Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (

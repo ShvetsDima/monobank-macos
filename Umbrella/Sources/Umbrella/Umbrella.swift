@@ -1,6 +1,7 @@
-public struct Umbrella {
-    public private(set) var text = "Hello, World!"
+import Resources
 
+public struct Umbrella {
     public init() {
+        Resources.registerFonts()
     }
 }

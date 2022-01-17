@@ -1,0 +1,12 @@
+//
+//  Localizable.strings
+//
+//
+//  Created by Dima Shvets on 17.01.2022.
+//
+
+// MARK: - Buttons
+"Button.Next" = "Next";
+"Button.Accept" = "Accept and Continue";
+"Button.Cancel" = "Cancel";
+"Button.Back" = "Back";
