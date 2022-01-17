@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Authentication",
     platforms: [
-        .macOS(.v10_15)
+        .macOS(.v11)
     ],
     products: [
         .library(name: "Authentication", targets: ["Authentication"])

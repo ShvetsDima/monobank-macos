@@ -1,0 +1,9 @@
+xcassets:
+  inputs:
+    - ${SRCROOT}/Resources/Sources/Resources/Assets.xcassets
+  outputs:
+    - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/assets.stencil
+      params:
+        bundle: .module
+        publicAccess: true
+      output: ${SRCROOT}/Resources/Sources/Resources/Generated/Colors.swift

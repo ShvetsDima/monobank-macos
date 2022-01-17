@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		292EEE13279373F5008521C4 /* Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 292EEE12279373F5008521C4 /* Umbrella */; };
 		292EEE1927937D7A008521C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EEE1827937D7A008521C4 /* Config.swift */; };
 		2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4C276A6299000AA538 /* MonobankApp.swift */; };
 		2991CA51276A629A000AA538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA50276A6299000AA538 /* Assets.xcassets */; };
@@ -15,6 +14,7 @@
 		2991CA5F276A629A000AA538 /* MonobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA5E276A629A000AA538 /* MonobankTests.swift */; };
 		2991CA69276A629A000AA538 /* MonobankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA68276A629A000AA538 /* MonobankUITests.swift */; };
 		2991CA6B276A629A000AA538 /* MonobankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA6A276A629A000AA538 /* MonobankUITestsLaunchTests.swift */; };
+		2999B0DF2795FAE90085C3A7 /* Umbrella in Frameworks */ = {isa = PBXBuildFile; productRef = 2999B0DE2795FAE90085C3A7 /* Umbrella */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		292EEE1C27937EB6008521C4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adhoc.xcconfig; sourceTree = "<group>"; };
 		292EEE1E27937EE3008521C4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		292EEE26279382B9008521C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		292EEE26279382B9008521C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2968B702276A700E0083DBBD /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
 		2991CA49276A6299000AA538 /* Monobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2991CA4C276A6299000AA538 /* MonobankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonobankApp.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292EEE13279373F5008521C4 /* Umbrella in Frameworks */,
+				2999B0DF2795FAE90085C3A7 /* Umbrella in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +88,7 @@
 			children = (
 				292EEE1827937D7A008521C4 /* Config.swift */,
 				2991CA55276A629A000AA538 /* Monobank.entitlements */,
+				292EEE26279382B9008521C4 /* Info.plist */,
 				292EEE1C27937EB6008521C4 /* Debug.xcconfig */,
 				292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */,
 				292EEE1E27937EE3008521C4 /* Release.xcconfig */,
@@ -131,7 +132,6 @@
 		2991CA4B276A6299000AA538 /* Monobank */ = {
 			isa = PBXGroup;
 			children = (
-				292EEE26279382B9008521C4 /* Info.plist */,
 				2991CA4C276A6299000AA538 /* MonobankApp.swift */,
 				292EEE1727937D28008521C4 /* Configuration */,
 				2991CA50276A6299000AA538 /* Assets.xcassets */,
@@ -172,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2991CA6E276A629A000AA538 /* Build configuration list for PBXNativeTarget "Monobank" */;
 			buildPhases = (
+				29FE43922795F01E00DEEEE1 /* Generate Colors */,
 				2991CA45276A6299000AA538 /* Sources */,
 				2991CA46276A6299000AA538 /* Frameworks */,
 				2991CA47276A6299000AA538 /* Resources */,
@@ -182,7 +183,7 @@
 			);
 			name = Monobank;
 			packageProductDependencies = (
-				292EEE12279373F5008521C4 /* Umbrella */,
+				2999B0DE2795FAE90085C3A7 /* Umbrella */,
 			);
 			productName = Monobank;
 			productReference = 2991CA49276A6299000AA538 /* Monobank.app */;
@@ -292,6 +293,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29FE43922795F01E00DEEEE1 /* Generate Colors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Colors";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd Resources\n/usr/bin/xcrun --sdk macosx swift run -c release swiftgen config run --config ./Sources/Resources/Scripts/swiftgen.yml\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2991CA45276A6299000AA538 /* Sources */ = {
@@ -414,7 +436,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -422,7 +444,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,7 +636,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -622,7 +644,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,7 +669,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Info.plist;
+				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -655,7 +677,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Monobank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -810,7 +832,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		292EEE12279373F5008521C4 /* Umbrella */ = {
+		2999B0DE2795FAE90085C3A7 /* Umbrella */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Umbrella;
 		};
