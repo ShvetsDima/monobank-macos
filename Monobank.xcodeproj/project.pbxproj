@@ -172,7 +172,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2991CA6E276A629A000AA538 /* Build configuration list for PBXNativeTarget "Monobank" */;
 			buildPhases = (
-				29FE43922795F01E00DEEEE1 /* Generate Resources */,
+				299FA9682799B79D0013813D /* [Sourcery] Core UseCases Generation */,
+				29FE43922795F01E00DEEEE1 /* [SwiftGen] Generate Resources */,
 				2991CA45276A6299000AA538 /* Sources */,
 				2991CA46276A6299000AA538 /* Frameworks */,
 				2991CA47276A6299000AA538 /* Resources */,
@@ -295,7 +296,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29FE43922795F01E00DEEEE1 /* Generate Resources */ = {
+		299FA9682799B79D0013813D /* [Sourcery] Core UseCases Generation */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +305,25 @@
 			);
 			inputPaths = (
 			);
-			name = "Generate Resources";
+			name = "[Sourcery] Core UseCases Generation";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd Core\n/usr/bin/xcrun --sdk macosx swift run -c release sourcery --sources ./ --templates ./Sources/Core/Templates --output ./Sources/Core/Generated\n";
+		};
+		29FE43922795F01E00DEEEE1 /* [SwiftGen] Generate Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftGen] Generate Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (

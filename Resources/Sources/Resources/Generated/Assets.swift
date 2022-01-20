@@ -9,23 +9,23 @@ import SwiftUI
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-public enum Asset {
-  public static let main = ColorAsset(name: "Main")
-  public static let example = ImageAsset(name: "Example")
+internal enum Asset {
+  internal static let main = ColorAsset(name: "Main")
+  internal static let example = ImageAsset(name: "Example")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 // MARK: - Implementation Details
 
-public struct ColorAsset {
+internal struct ColorAsset {
   fileprivate let name: String
 
-  public var color: Color {
+  internal var color: Color {
     Color(self)
   }
 }
 
-public extension Color {
+internal extension Color {
   /// Creates a named color.
   /// - Parameter asset: the color resource to lookup.
   init(_ asset: ColorAsset) {
@@ -34,15 +34,15 @@ public extension Color {
   }
 }
 
-public struct ImageAsset {
+internal struct ImageAsset {
   fileprivate let name: String
 
-  public var image: Image {
+  internal var image: Image {
     Image(name)
   }
 }
 
-public extension Image {
+internal extension Image {
   /// Creates a labeled image that you can use as content for controls.
   /// - Parameter asset: the image resource to lookup.
   init(_ asset: ImageAsset) {

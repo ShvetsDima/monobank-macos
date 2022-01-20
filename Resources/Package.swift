@@ -17,10 +17,10 @@ let package = Package(
         .macOS(.v11)
     ],
     products: [
-        .library(name: "Resources", targets: ["Resources"]),
+        .library(name: "Resources", targets: ["Resources"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SwiftGen/SwiftGen", from: "6.5.1"),
+        .package(url: "https://github.com/SwiftGen/SwiftGen", from: "6.5.1")
     ],
     targets: [
         .target(name: "Resources",

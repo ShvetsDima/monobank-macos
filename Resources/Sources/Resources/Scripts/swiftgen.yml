@@ -3,9 +3,6 @@ xcassets:
     - ${SRCROOT}/Resources/Sources/Resources/Assets.xcassets
   outputs:
     - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/assets.stencil
-      params:
-        bundle: .module
-        publicAccess: true
       output: ${SRCROOT}/Resources/Sources/Resources/Generated/Assets.swift
 
 strings:
@@ -13,9 +10,6 @@ strings:
     - ${SRCROOT}/Resources/Sources/Resources/Strings/Localizable.strings
   outputs:
     - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/strings.stencil
-      params:
-        bundle: .module
-        publicAccess: true
       output: ${SRCROOT}/Resources/Sources/Resources/Generated/Strings.swift
       
 fonts:
@@ -23,7 +17,4 @@ fonts:
     - ${SRCROOT}/Resources/Sources/Resources/Fonts/Inter
   outputs:
     - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/fonts.stencil
-      params:
-        bundle: .module
-        publicAccess: true
       output: ${SRCROOT}/Resources/Sources/Resources/Generated/Fonts.swift

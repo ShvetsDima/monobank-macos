@@ -11,7 +11,7 @@ extension Font {
     return Font.custom(style.rawValue, size: size, relativeTo: textStyle)
   }
 
-  public enum InterStyle: String {
+  public enum InterStyle: String, CaseIterable {
     case black = "Inter-Black"
     case bold = "Inter-Bold"
     case extraBold = "Inter-ExtraBold"

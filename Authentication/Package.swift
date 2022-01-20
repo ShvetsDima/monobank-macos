@@ -13,7 +13,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "0.33.1"),
-        .package(path: "../Core")
+        .package(path: "../Core"),
+        .package(path: "../UIComponents")
     ],
     targets: [
         .target(name: "Authentication", dependencies: []),

@@ -11,11 +11,7 @@ import Umbrella
 @main
 struct MonobankApp: App {
     
-    let umbrella: Umbrella
-    
-    init() {
-        self.umbrella = Umbrella()
-    }
+    let umbrella: Umbrella = Umbrella()
     
     var body: some Scene {
         WindowGroup {
