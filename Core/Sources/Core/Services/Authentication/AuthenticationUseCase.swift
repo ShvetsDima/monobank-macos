@@ -6,5 +6,6 @@
 //
 
 public protocol AuthenticationUseCase: AutoUseCaseProvider {
-    
+    var authenticationURL: URL { get }
+    func authenticateWith(_ token: String)
 }
