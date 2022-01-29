@@ -11,4 +11,5 @@ public protocol CoreEnvironment {
     var baseURL: URL { get }
     var bundleID: String { get }
     var tokenKey: String { get }
+    var authorizationHeader: String { get }
 }

@@ -10,6 +10,8 @@ import SwiftUI
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal static let contrastPrimary = ColorAsset(name: "ContrastPrimary")
+  internal static let contrastSecondary = ColorAsset(name: "ContrastSecondary")
   internal static let main = ColorAsset(name: "Main")
   internal static let example = ImageAsset(name: "Example")
 }

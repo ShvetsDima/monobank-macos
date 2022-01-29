@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		292EEE1927937D7A008521C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EEE1827937D7A008521C4 /* Config.swift */; };
+		292EEE1927937D7A008521C4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EEE1827937D7A008521C4 /* Environment.swift */; };
 		2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991CA4C276A6299000AA538 /* MonobankApp.swift */; };
 		2991CA51276A629A000AA538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA50276A6299000AA538 /* Assets.xcassets */; };
 		2991CA54276A629A000AA538 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2991CA53276A629A000AA538 /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		292EEE1127937351008521C4 /* Umbrella */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Umbrella; sourceTree = "<group>"; };
 		292EEE1427937498008521C4 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
 		292EEE15279374DF008521C4 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Resources; sourceTree = "<group>"; };
-		292EEE1827937D7A008521C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		292EEE1827937D7A008521C4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		292EEE1C27937EB6008521C4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adhoc.xcconfig; sourceTree = "<group>"; };
 		292EEE1E27937EE3008521C4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -83,17 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		292EEE1727937D28008521C4 /* Configuration */ = {
+		292EEE1727937D28008521C4 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				292EEE1827937D7A008521C4 /* Config.swift */,
+				292EEE1827937D7A008521C4 /* Environment.swift */,
 				2991CA55276A629A000AA538 /* Monobank.entitlements */,
 				292EEE26279382B9008521C4 /* Info.plist */,
 				292EEE1C27937EB6008521C4 /* Debug.xcconfig */,
 				292EEE1D27937ED5008521C4 /* Adhoc.xcconfig */,
 				292EEE1E27937EE3008521C4 /* Release.xcconfig */,
 			);
-			path = Configuration;
+			path = Environment;
 			sourceTree = "<group>";
 		};
 		2968B706276A71090083DBBD /* Frameworks */ = {
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				2991CA4C276A6299000AA538 /* MonobankApp.swift */,
-				292EEE1727937D28008521C4 /* Configuration */,
+				292EEE1727937D28008521C4 /* Environment */,
 				2991CA50276A6299000AA538 /* Assets.xcassets */,
 				2991CA52276A629A000AA538 /* Preview Content */,
 			);
@@ -339,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292EEE1927937D7A008521C4 /* Config.swift in Sources */,
+				292EEE1927937D7A008521C4 /* Environment.swift in Sources */,
 				2991CA4D276A6299000AA538 /* MonobankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Environment/Monobank.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -455,7 +455,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
+				INFOPLIST_FILE = Monobank/Environment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -645,7 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Environment/Monobank.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -655,7 +655,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
+				INFOPLIST_FILE = Monobank/Environment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -678,7 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Monobank/Configuration/Monobank.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Monobank/Environment/Monobank.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -688,7 +688,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Monobank/Configuration/Info.plist;
+				INFOPLIST_FILE = Monobank/Environment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

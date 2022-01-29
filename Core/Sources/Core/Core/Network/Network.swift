@@ -11,16 +11,16 @@ import Combine
 
 final class Network {
     
-    private let baseURL: URL
+    private let environment: CoreEnvironment
     private let plugins: [PluginType]
         
-    init(baseURL: URL, keychain: KeychainService) {
-        self.baseURL = baseURL
-        self.plugins = [AuthPlugin(keychain)]
+    init(environment: CoreEnvironment, keychain: KeychainService) {
+        self.environment = environment
+        self.plugins = [AuthPlugin(keychain, environment)]
     }
     
     func provider<Target: TargetType>()-> Provider<Target> {
-        Provider(baseURL: baseURL, plugins: plugins)
+        Provider(baseURL: environment.baseURL, plugins: plugins)
     }
     
 }

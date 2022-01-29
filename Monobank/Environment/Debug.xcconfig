@@ -6,3 +6,5 @@
 //
 
 BASE_URL = https:/$()/api.monobank.ua/
+TOKEN_KEY = TokenKey
+AUTHORIZATION_HEADER = X-Token

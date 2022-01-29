@@ -7,7 +7,9 @@ xcassets:
 
 strings:
   inputs:
-    - ${SRCROOT}/Resources/Sources/Resources/Strings/Localizable.strings
+    - ${SRCROOT}/Resources/Sources/Resources/Strings/en.lproj/Localizable.strings
+    - ${SRCROOT}/Resources/Sources/Resources/Strings/ru.lproj/Localizable.strings
+    - ${SRCROOT}/Resources/Sources/Resources/Strings/uk.lproj/Localizable.strings
   outputs:
     - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/strings.stencil
       output: ${SRCROOT}/Resources/Sources/Resources/Generated/Strings.swift

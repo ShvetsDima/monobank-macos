@@ -8,13 +8,17 @@
 import SwiftUI
 import WebKit
 
-struct WebView: NSViewRepresentable {
+public struct WebView: NSViewRepresentable {
     
     let url: URL
     
-    func makeNSView(context: Self.Context) -> WKWebView { WKWebView() }
-
-    func updateNSView(_ nsView: WKWebView, context: Self.Context) {
+    public init(url: URL) {
+        self.url = url
+    }
+    
+    public func makeNSView(context: Self.Context) -> WKWebView { WKWebView() }
+    
+    public func updateNSView(_ nsView: WKWebView, context: Self.Context) {
         nsView.load(URLRequest(url: url))
     }
     

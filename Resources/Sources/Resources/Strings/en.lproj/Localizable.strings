@@ -8,5 +8,7 @@
 // MARK: - Buttons
 "Button.Next" = "Next";
 "Button.Accept" = "Accept and Continue";
-"Button.Cancel" = "Cancel";
-"Button.Back" = "Back";
+"Button.Login" = "Login";
+
+// MARK: - Authentication
+"Title.Scan.QR" = "Scan QR Code";

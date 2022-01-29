@@ -13,6 +13,7 @@ let templatesPath = "Templates"
 
 let package = Package(
     name: "Resources",
+    defaultLocalization: LanguageTag("uk"),
     platforms: [
         .macOS(.v11)
     ],

@@ -17,7 +17,10 @@ let package = Package(
         .package(path: "../UIComponents")
     ],
     targets: [
-        .target(name: "Authentication", dependencies: []),
+        .target(name: "Authentication",
+                dependencies: ["Core",
+                               "UIComponents",
+                               .product(name: "ComposableArchitecture", package: "swift-composable-architecture")]),
         .testTarget(name: "AuthenticationTests", dependencies: ["Authentication"])
     ]
 )

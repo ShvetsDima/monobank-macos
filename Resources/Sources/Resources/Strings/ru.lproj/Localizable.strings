@@ -1,0 +1,14 @@
+//
+//  Localizable.strings
+//
+//
+//  Created by Dima Shvets on 17.01.2022.
+//
+
+// MARK: - Buttons
+"Button.Next" = "Дальше";
+"Button.Accept" = "Принять и Продолжить";
+"Button.Login" = "Войти";
+
+// MARK: - Authentication
+"Title.Scan.QR" = "Отсканируйте QR код";

@@ -17,7 +17,7 @@ final class Context {
     init(environment: CoreEnvironment) {
         self.environment = environment
         self.keychain = KeychainService(environment.bundleID)
-        self.network = Network(baseURL: environment.baseURL, keychain: keychain)
+        self.network = Network(environment: environment, keychain: keychain)
     }
 
 }

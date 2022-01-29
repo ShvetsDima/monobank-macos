@@ -10,16 +10,18 @@ import Moya
 
 final class AuthPlugin: PluginType {
     private let keychain: KeychainService
-    
-    init(_ keychain: KeychainService) {
+    private let environment: CoreEnvironment
+        
+    init(_ keychain: KeychainService, _ environment: CoreEnvironment) {
         self.keychain = keychain
+        self.environment = environment
     }
     
     func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         guard target.needAuth else { return request }
         var updatedRequest = request
-        let token = keychain.value(for: "accessToken")
-        updatedRequest.setValue(token, forHTTPHeaderField: "Authorization")
+        let token = keychain.value(for: environment.tokenKey)
+        updatedRequest.setValue(token, forHTTPHeaderField: environment.authorizationHeader)
         return updatedRequest
     }
     

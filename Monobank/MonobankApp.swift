@@ -11,11 +11,9 @@ import Umbrella
 @main
 struct MonobankApp: App {
     
-    let umbrella: Umbrella = Umbrella()
-    
     var body: some Scene {
         WindowGroup {
-            Text("Debug")
+            Window(Environment())
         }
     }
 }

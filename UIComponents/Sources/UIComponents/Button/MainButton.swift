@@ -1,5 +1,5 @@
 //
-//  LoginButton.swift
+//  MainButton.swift
 //  
 //
 //  Created by Dima Shvets on 15.01.2022.
@@ -8,12 +8,13 @@
 import SwiftUI
 import Resources
 
-struct LoginButton: View {
+public struct MainButton: View {
     
+    let title: String
     let action: () -> Void
     
-    var body: some View {
-        Button("FROM RESOURCES LOGIN", action: action)
+    public var body: some View {
+        Button(title, action: action)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -22,6 +23,8 @@ struct LoginButton: View {
 
 struct MainButton_Previews: PreviewProvider {
     static var previews: some View {
-        LoginButton(action: self.print)
+        MainButton(title: "MainButton") {
+            print("MainButton")
+        }
     }
 }
