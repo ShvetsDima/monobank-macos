@@ -70,11 +70,11 @@ extension L10n {
 public struct LocalizedString {
   internal let lookupKey: String
 
-  var key: LocalizedStringKey {
+  public var key: LocalizedStringKey {
     LocalizedStringKey(lookupKey)
   }
 
-  var text: String {
+  public var text: String {
     L10n.tr("Localizable", lookupKey)
   }
 }

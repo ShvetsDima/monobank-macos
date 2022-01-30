@@ -11,4 +11,11 @@
 "Button.Login" = "Login";
 
 // MARK: - Authentication
-"Title.Scan.QR" = "Scan QR Code";
+"Title.Scan.QR" = "Scan QR code";
+"Title.Authentication.Step.1" = "1";
+"Title.Authentication.Step.2" = "2";
+"Title.Authentication.Step.3" = "3";
+"Description.Authentication.Step.1" = "Description Step 1";
+"Description.Authentication.Step.2" = "Description Step 2";
+"Description.Authentication.Step.3" = "Description Step 3";
+"Placeholder.Token" = "Token";

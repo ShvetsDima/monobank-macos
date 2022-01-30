@@ -9,11 +9,14 @@ import SwiftUI
 import UIComponents
 import Core
 import ComposableArchitecture
+import Resources
 
 public struct AuthenticationView: View {
     
     private let store: Store<AuthenticationState, AuthenticationAction>
     private let environment: Environment
+    
+    @State var text = ""
     
     public init(_ environment: Environment) {
         let useCases = Services(environment)
@@ -35,15 +38,27 @@ public struct AuthenticationView: View {
     private func content(_ viewStore: ViewStore<AuthenticationState, AuthenticationAction>) -> some View {
         HStack {
             WebView(url: environment.baseURL)
+                .frame(minWidth: 0, maxWidth: .infinity)
             VStack {
-                Text("Scan QR Code")
-                Button("Login", action: {})
-                //.main()
-            }
-        }.background(
-            LinearGradient(gradient: Gradient(colors: [.blue, .green]),
-                           startPoint: .topTrailing, endPoint: .bottomLeading)
-        )
+                HStack(alignment: .top, spacing: .zero) {
+                    Text("1")
+                        .frame(minWidth: .zero, maxWidth: .infinity)
+                    Text("L10n.Title.Scan.qr.text")
+                        .frame(minWidth: .zero, maxWidth: .infinity)
+                }
+                HStack {
+                    Text("2")
+                    Text("L10n.Title.Scan.qr.text")
+                }
+                HStack {
+                    Text("3")
+                    Text("L10n.Title.Scan.qr.text")
+                }
+                TextField("Token", text: $text)
+                Button("L10n.Button.login.text",
+                       action: {})
+            }.frame(minWidth: .zero, maxWidth: .infinity)
+        }
     }
 }
 

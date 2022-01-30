@@ -8,12 +8,42 @@ public enum L10n {
   public enum Button {
     /// Accept and Continue
     public static let accept = LocalizedString(lookupKey: "Button.Accept")
-    /// Back
-    public static let back = LocalizedString(lookupKey: "Button.Back")
-    /// Cancel
-    public static let cancel = LocalizedString(lookupKey: "Button.Cancel")
+    /// Login
+    public static let login = LocalizedString(lookupKey: "Button.Login")
     /// Next
     public static let next = LocalizedString(lookupKey: "Button.Next")
+  }
+  public enum Description {
+    public enum Authentication {
+      public enum Step {
+        /// Description Step 1
+        public static let _1 = LocalizedString(lookupKey: "Description.Authentication.Step.1")
+        /// Description Step 2
+        public static let _2 = LocalizedString(lookupKey: "Description.Authentication.Step.2")
+        /// Description Step 3
+        public static let _3 = LocalizedString(lookupKey: "Description.Authentication.Step.3")
+      }
+    }
+  }
+  public enum Placeholder {
+    /// Token
+    public static let token = LocalizedString(lookupKey: "Placeholder.Token")
+  }
+  public enum Title {
+    public enum Authentication {
+      public enum Step {
+        /// 1
+        public static let _1 = LocalizedString(lookupKey: "Title.Authentication.Step.1")
+        /// 2
+        public static let _2 = LocalizedString(lookupKey: "Title.Authentication.Step.2")
+        /// 3
+        public static let _3 = LocalizedString(lookupKey: "Title.Authentication.Step.3")
+      }
+    }
+    public enum Scan {
+      /// Scan QR code
+      public static let qr = LocalizedString(lookupKey: "Title.Scan.QR")
+    }
   }
 }
 
@@ -29,11 +59,11 @@ extension L10n {
 public struct LocalizedString {
   internal let lookupKey: String
 
-  var key: LocalizedStringKey {
+  public var key: LocalizedStringKey {
     LocalizedStringKey(lookupKey)
   }
 
-  var text: String {
+  public var text: String {
     L10n.tr("Localizable", lookupKey)
   }
 }
