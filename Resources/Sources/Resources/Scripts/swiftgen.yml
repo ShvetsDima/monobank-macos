@@ -4,6 +4,8 @@ xcassets:
   outputs:
     - templatePath: ${SRCROOT}/Resources/Sources/Resources/Templates/assets.stencil
       output: ${SRCROOT}/Resources/Sources/Resources/Generated/Assets.swift
+      params:
+          publicAccess: true
 
 strings:
   inputs:

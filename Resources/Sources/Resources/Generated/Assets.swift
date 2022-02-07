@@ -9,48 +9,60 @@ import SwiftUI
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-internal enum Asset {
-  internal static let contrastPrimary = ColorAsset(name: "ContrastPrimary")
-  internal static let contrastSecondary = ColorAsset(name: "ContrastSecondary")
-  internal static let main = ColorAsset(name: "Main")
-  internal static let example = ImageAsset(name: "Example")
+public enum Asset {
+  public enum Colors {
+
+    public static let contrastPrimary = ColorAsset(name: "Colors/ContrastPrimary")
+    public static let contrastSecondary = ColorAsset(name: "Colors/ContrastSecondary")
+    public static let main = ColorAsset(name: "Colors/Main")
+  }
+  public enum Images {
+
+    public static let example = ImageAsset(name: "Images/Example")
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 // MARK: - Implementation Details
 
-internal struct ColorAsset {
+public struct ColorAsset {
   fileprivate let name: String
 
-  internal var color: Color {
+  public var color: Color {
     Color(self)
   }
 }
 
-internal extension Color {
+public extension Color {
   /// Creates a named color.
   /// - Parameter asset: the color resource to lookup.
   init(_ asset: ColorAsset) {
-    let bundle = Bundle(for: BundleToken.self)
-    self.init(asset.name, bundle: bundle)
+    self.init(asset.name, bundle: BundleToken.bundle)
   }
 }
 
-internal struct ImageAsset {
+public struct ImageAsset {
   fileprivate let name: String
 
-  internal var image: Image {
+  public var image: Image {
     Image(name)
   }
 }
 
-internal extension Image {
+public extension Image {
   /// Creates a labeled image that you can use as content for controls.
   /// - Parameter asset: the image resource to lookup.
   init(_ asset: ImageAsset) {
-    let bundle = Bundle(for: BundleToken.self)
-    self.init(asset.name, bundle: bundle)
+    self.init(asset.name, bundle: BundleToken.bundle)
   }
 }
 
-private final class BundleToken {}
+private final class BundleToken {
+  static let bundle: Bundle = {
+    #if SWIFT_PACKAGE
+      return Bundle.module
+    #else
+      return Bundle(for: BundleToken.self)
+    #endif
+  }()
+}

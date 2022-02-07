@@ -84,8 +84,7 @@ import SwiftUI
   /// Creates a named color.
   /// - Parameter asset: the color resource to lookup.
   init(_ asset: {{colorType}}) {
-    let bundle = Bundle(for: BundleToken.self)
-    self.init(asset.name, bundle: bundle)
+    self.init(asset.name, bundle: BundleToken.bundle)
   }
 }
 
@@ -101,12 +100,19 @@ import SwiftUI
   /// Creates a labeled image that you can use as content for controls.
   /// - Parameter asset: the image resource to lookup.
   init(_ asset: {{imageType}}) {
-    let bundle = Bundle(for: BundleToken.self)
-    self.init(asset.name, bundle: bundle)
+    self.init(asset.name, bundle: BundleToken.bundle)
   }
 }
 
-private final class BundleToken {}
+private final class BundleToken {
+  static let bundle: Bundle = {
+    #if SWIFT_PACKAGE
+      return Bundle.module
+    #else
+      return Bundle(for: BundleToken.self)
+    #endif
+  }()
+}
 {% else %}
 // No assets found
 {% endif %}

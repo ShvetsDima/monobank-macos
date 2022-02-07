@@ -40,23 +40,43 @@ public struct AuthenticationView: View {
             WebView(url: environment.baseURL)
                 .frame(minWidth: 0, maxWidth: .infinity)
             VStack {
-                HStack(alignment: .top, spacing: .zero) {
-                    Text("1")
-                        .frame(minWidth: .zero, maxWidth: .infinity)
+                HStack {
+                    ZStack {
+                        Circle()
+                            .fill(Color.blue)
+                            .frame(width: 44, height: 44)
+                        Text("1")
+                    }
+                    .padding()
                     Text("L10n.Title.Scan.qr.text")
                         .frame(minWidth: .zero, maxWidth: .infinity)
                 }
                 HStack {
-                    Text("2")
+                    ZStack {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(width: 44, height: 44)
+                        Text("2")
+                    }
+                    .padding()
                     Text("L10n.Title.Scan.qr.text")
+                        .frame(minWidth: .zero, maxWidth: .infinity)
                 }
                 HStack {
-                    Text("3")
+                    ZStack {
+                        Circle()
+                            .fill(Color.yellow)
+                            .frame(width: 44, height: 44)
+                        Text("3")
+                    }
+                    .padding()
                     Text("L10n.Title.Scan.qr.text")
+                        .frame(minWidth: .zero, maxWidth: .infinity)
                 }
-                TextField("Token", text: $text)
-                Button("L10n.Button.login.text",
+                MainTextField(placeholder: "Token", text: $text)
+                MainButton(title: "L10n.Button.login.text",
                        action: {})
+                    .padding()
             }.frame(minWidth: .zero, maxWidth: .infinity)
         }
     }
