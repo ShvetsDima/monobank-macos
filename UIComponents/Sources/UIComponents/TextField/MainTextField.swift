@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Resources
 
 public struct MainTextField: View {
 
@@ -39,9 +40,7 @@ public struct MainTextField: View {
                 .accentColor(Color.secondary)
                 .animation(.linear)
                 .textFieldStyle(PlainTextFieldStyle())
-            ///Floating Placeholder
             Text(placeholder)
-                .font(.inter(.extraBold, size: 16))
                 .foregroundColor(Color.secondary)
                 .background(Color.clear)
                 .padding(shouldPlaceHolderMove ?
@@ -50,6 +49,7 @@ public struct MainTextField: View {
                 .scaleEffect(shouldPlaceHolderMove ? 1.0 : 1.2)
                 .animation(.linear)
         }
+        .font(.inter(.medium, size: 16))
     }
 }
 

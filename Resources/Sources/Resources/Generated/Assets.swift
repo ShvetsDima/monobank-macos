@@ -12,8 +12,13 @@ import SwiftUI
 public enum Asset {
   public enum Colors {
 
+    public static let background = ColorAsset(name: "Colors/Background")
     public static let contrastPrimary = ColorAsset(name: "Colors/ContrastPrimary")
     public static let contrastSecondary = ColorAsset(name: "Colors/ContrastSecondary")
+    public static let cornflowerBlue = ColorAsset(name: "Colors/CornflowerBlue")
+    public static let emerald = ColorAsset(name: "Colors/Emerald")
+    public static let equator = ColorAsset(name: "Colors/Equator")
+    public static let lavender = ColorAsset(name: "Colors/Lavender")
     public static let main = ColorAsset(name: "Colors/Main")
   }
   public enum Images {

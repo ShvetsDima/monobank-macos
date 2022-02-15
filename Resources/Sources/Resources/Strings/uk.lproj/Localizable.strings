@@ -12,9 +12,12 @@
 
 // MARK: - Authentication
 "Title.Scan.QR" = "Зіскануйте QR код";
-"Title.Authentication.Step.1" = "1";
-"Title.Authentication.Step.2" = "2";
-"Title.Authentication.Step.3" = "3";
+"Step.1" = "1";
+"Step.2" = "2";
+"Step.3" = "3";
+"Title.Authentication.Step.1" = "Заголовок Шаг 1";
+"Title.Authentication.Step.2" = "Заголовок Шаг 2";
+"Title.Authentication.Step.3" = "Заголовок Шаг 3";
 "Description.Authentication.Step.1" = "Опис Шаг 1";
 "Description.Authentication.Step.2" = "Опис Шаг 2";
 "Description.Authentication.Step.3" = "Опис Шаг 3";

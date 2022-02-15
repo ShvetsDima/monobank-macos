@@ -29,14 +29,22 @@ public enum L10n {
     /// Token
     public static let token = LocalizedString(lookupKey: "Placeholder.Token")
   }
+  public enum Step {
+    /// 1
+    public static let _1 = LocalizedString(lookupKey: "Step.1")
+    /// 2
+    public static let _2 = LocalizedString(lookupKey: "Step.2")
+    /// 3
+    public static let _3 = LocalizedString(lookupKey: "Step.3")
+  }
   public enum Title {
     public enum Authentication {
       public enum Step {
-        /// 1
+        /// Title Step 1
         public static let _1 = LocalizedString(lookupKey: "Title.Authentication.Step.1")
-        /// 2
+        /// Title Step 2
         public static let _2 = LocalizedString(lookupKey: "Title.Authentication.Step.2")
-        /// 3
+        /// Title Step 3
         public static let _3 = LocalizedString(lookupKey: "Title.Authentication.Step.3")
       }
     }
